@@ -105,9 +105,7 @@ textarea:focus {
 }
 
 .options-summary ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  margin: 0px 0px 10px 20px;
 }
 
 .options-summary li {
@@ -137,7 +135,7 @@ textarea:focus {
 
 .options-form ul {
   list-style-type: none;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .options-form li {
