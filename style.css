@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  margin: 0px 20px 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  padding: 10px 0px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.title i {
+  margin-left: -20px;
+}
+
+.title a,
+.title a:visited {
+  color: black;
+}
+
+.title a:focus,
+.title a:hover {
+  color: #002762;
+}
+
+.bloc-reservation {
+  flex: 1;
+}
+
+.summary-item {
+  margin-bottom: 10px;
+}
+
+.summary-item img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.summary-item label {
+  font-weight: bold;
+}
+
+.summary-item span {
+  margin-left: 10px;
+}
+
+.message {
+  padding-top: 10px;
+}
+
+.message label {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  resize: none;
+}
+
+textarea:hover,
+textarea:focus {
+  border: 1px solid #002762;
+}
+
+.options-summary {
+  flex: 1 100%;
+  margin: 30px 0px 30px;
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+}
+
+.options-summary ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.options-summary li {
+  margin-bottom: 5px;
+}
+
+.total-price {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.confirm-button {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  background-color: #002762;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.options-form {
+  flex: 1;
+}
+
+.options-form ul {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.options-form li {
+  padding-top: 5px;
+}
+
+.google-map {
+  margin-top: 10px;
+}
+
+.google-map iframe {
+  width: 100%;
+}

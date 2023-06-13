@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Réservez des voitures entre particuliers partout en France et en toute sécurité grâce à nos assurances" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" href="/images/icon.jpg" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/83f6f41b1a.js"
+      crossorigin="anonymous"></script>
+    <title>Book&Drive - Récapitulatif de la réservation</title>
+  </head>
+
+  <body>
+    <header>
+      <a
+        href="#"
+        class="banner-logo"
+        title="Book&Drive"
+        aria-label="Book&Drive">
+        <img
+          src="images/logo.png"
+          alt="Book&Drive logo"
+          title="Book&Drive logo" />
+      </a>
+      <h1 class="banner-title">Finalisez votre réservation</h1>
+    </header>
+
+    <main>
+      <div class="content">
+        <section class="bloc-reservation">
+          <div class="title">
+            <a href="#" title="Return" aria-label="Return">
+              <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <h2>Résumé de la Réservation</h2>
+          </div>
+          <div class="summary-item">
+            <img src="images/car.jpg" alt="Ferrari F300" title="Ferrari F300" />
+          </div>
+          <div class="summary-item">
+            <strong>Voiture :</strong>
+            <span>Ferrari F300</span>
+          </div>
+          <div class="summary-item">
+            <strong>Propriétaire :</strong>
+            <span>Michael Schumacher</span>
+          </div>
+          <div class="summary-item">
+            <strong>Emplacement :</strong>
+            <span>Rue du Sentier, 75002 Paris</span>
+          </div>
+          <div class="summary-item">
+            <strong>Date de livraison :</strong>
+            <span>15/06/2023 avant 12h</span>
+          </div>
+          <div class="summary-item">
+            <strong>Date de retour :</strong>
+            <span>17/06/2023 avant 12h</span>
+          </div>
+          <div class="summary-item">
+            <strong>Durée de la location :</strong>
+            <span>2 jours</span>
+          </div>
+          <div class="summary-item">
+            <strong>Prix :</strong>
+            <span>2x500€</span>
+          </div>
+          <div class="summary-item">
+            <strong>Prix Total:</strong>
+            <span id="base-price">1000€</span>
+          </div>
+
+          <div class="message">
+            <label for="message">Message au propriétaire :</label>
+            <textarea
+              id="message"
+              name="message"
+              class="textarea"
+              form="form1"
+              placeholder="Précisez l’heure de rendez-vous souhaitée. N’oubliez pas les règles élémentaires de politesse et de courtoisie et évitez les détails trop personnels."
+              rows="6"
+              cols="50"></textarea>
+          </div>
+        </section>
+
+        <form id="form1" action="#" method="get" class="options-form">
+          <h2>Options Personnalisées</h2>
+          <section id="delivery-location">
+            <h3>Emplacement de Livraison :</h3>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="delivery-location"
+                  id="loc1"
+                  value="loc1"
+                  required />
+                <label for="loc1">Rue du Sentier, 75002 Paris</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="delivery-location"
+                  id="loc2"
+                  value="loc2"
+                  required />
+                <label for="loc2"
+                  >Pl. Charles de Gaulle, 75008 Paris (+20€)</label
+                >
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="delivery-location"
+                  id="loc3"
+                  value="loc3"
+                  required />
+                <label for="loc3"
+                  >59 Rue Victor Hugo, 92800 Puteaux (+40€)</label
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section id="insurance">
+            <h3>Assurance :</h3>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="insurance"
+                  id="insurance1"
+                  value="insurance1"
+                  required />
+                <label for="insurance1">Tiers simple</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="insurance"
+                  id="insurance2"
+                  value="insurance2"
+                  required />
+                <label for="insurance2">Tous risques (+200€)</label>
+              </li>
+            </ul>
+          </section>
+
+          <aside class="google-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67623.85117908468!2d2.2809022955262517!3d48.87059313200418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e162f737d37%3A0x865faec822ff19bd!2sRue%20du%20Sentier%2C%2075002%20Paris!5e0!3m2!1sfr!2sfr!4v1686638665958!5m2!1sfr!2sfr"
+              id="gmap1"
+              aria-label="Google maps"
+              width="300"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91572.47508726614!2d2.2271964791953565!3d48.874692906134776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec746f7c45%3A0x3847ffb6d0d85ec5!2sPl.%20Charles%20de%20Gaulle%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1686658243626!5m2!1sfr!2sfr"
+              id="gmap2"
+              aria-label="Google maps"
+              width="300"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              hidden></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56456.83623397334!2d2.253249002353494!3d48.86945692496996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664e1d091b52f%3A0x583dc44102c6e959!2s59%20Rue%20Victor%20Hugo%2C%2092800%20Puteaux!5e0!3m2!1sfr!2sfr!4v1686657966334!5m2!1sfr!2sfr"
+              id="gmap3"
+              aria-label="Google maps"
+              width="300"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              hidden></iframe>
+          </aside>
+        </form>
+
+        <section class="options-summary">
+          <h2>Résumé des Options</h2>
+          <ul>
+            <li>
+              Emplacement de Livraison: <span id="selected-location">-</span>
+            </li>
+            <li>Assurance: <span id="selected-insurance">-</span></li>
+          </ul>
+
+          <div class="total-price">
+            Prix Total: <span id="total-price">1000€</span>
+          </div>
+
+          <button form="form1" formaction="#" class="confirm-button">
+            Confirmer la Réservation
+          </button>
+        </section>
+      </div>
+    </main>
+
+    <script src="confirmation.js"></script>
+  </body>
+</html>
